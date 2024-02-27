@@ -6,7 +6,7 @@
         .nav {
             display: flex;
             justify-content: space-between;
-            background-color: #333;
+            background-color: #004072;
             padding: 30px;
          
             flex-wrap: wrap;
@@ -17,10 +17,14 @@
             color: #fff;
             text-decoration: none;
             text-align: center;
+            font-weight: bold;
         }
         
         .nav a:hover {
             color: #ddd;
+        }
+        p{
+            text-align: center;
         }
         h1{
             text-align: center;
@@ -28,7 +32,7 @@
         .rightalign{
             display: flex;
            
-            background-color: #333;
+            background-color: #004072;
          
             align-items: right;
             padding: auto;
@@ -46,7 +50,7 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: #333;
+            background-color: #004072;
             color: white;
             text-align: center;
         }
@@ -59,20 +63,53 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            width:600px;
+            height:400px;
         }
         .imgleft{
             display: block;
             margin-left: auto;
             margin-right: 0;
+         
         }
         .imgright{
             display: block;
             margin-left: auto;
-            margin-right: auto;
+            margin-right:auto;
+            
         }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .imgsize{
+            width:600px;
+            height:400px;
+        }
+        
+ /*trying this flexbox */
+
+ * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
+}
            </style>
         
 </head>
+<title>
+    Lab-two
+</title>
     <div class="nav">
         <section>
             <a href="#">Welcome to Software Design Website</a>
@@ -84,39 +121,40 @@
     </section>
     </div>
     
-<title>
-    Lab-two
-</title>
+
 
 <body> 
 <main>
    
-
-    <div >
+    <div>
         
         <article >
             <h3>About US </h3>
-            <img class="img" width="600" height="400" src="Image1.jpg" >
+            <p> we are driven by a passion for uncovering the mysteries of the deep blue.</p>
+            <img class="img"   src="Image1.jpg" >
         </article>
     </div>
-
     <div>
-        <section>
-        <article>
-            <h3>Services We Offer </h3>
-            <img class="imgleft" width="600" height="400"src="Image2.jpg" >
-        </article>
-    </section>
-    <section class="imgright">
-        <article>
-            <img width="600" height="400" src="Image3.jpg" >
-        </article>
-    
-    </section>
+        <h3>Services We Offer </h3>
     </div>
+    
+
+    <div class="row">
+        <div class="column">
+            <h3>Deep Water Diving </h3>
+            <p>Enjoy reef exploration and help clean the sea floor </p>
+          <img width="600" height="400" src="Image2.jpg" alt="Service 1" >
+        </div>
+        <div class="column">
+            <h3>Shark Chasing </h3>
+            <p>Meet the locals. Sometimes they bite. Worth the penny </p>
+          <img width="600" height="400" src="Image3.jpg" alt="Service 2" >
+        </div>
+       
+      </div>
    
     <div class="footer">
-        <p>Registered in since 2024</p>
+        <p>Registered since 2024: why css and html </p>
     </div>
 
 </main>
