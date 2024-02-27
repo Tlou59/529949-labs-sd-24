@@ -8,11 +8,15 @@
             justify-content: space-between;
             background-color: #333;
             padding: 30px;
+
+            flex-wrap: wrap;
+            align-items: center;
         }
         
         .nav a {
             color: #fff;
             text-decoration: none;
+            text-align: center;
         }
         
         .nav a:hover {
@@ -21,26 +25,68 @@
         h1{
             text-align: center;
         }
+        .rightalign{
+            display: flex;
+           
+            background-color: #333;
+         
+            align-items: right;
+            padding: auto;
+           
+        }
+        .rightalign a {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            margin-right: 100px;
+        }
         
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+}
            </style>
         
 </head>
     <div class="nav">
-        <a href="#">Welcome to Software Design Website</a>
+        <section>
+            <a href="#">Welcome to Software Design Website</a>
+            </section>
+        <section class="rightalign">
         <a href="#">About Us</a>
         <a href="#">Services</a>
         <a href="#">Contact Us</a>
+    </section>
     </div>
-
+    <div class="nav1">
+        
+    </div>
 <title>
     Lab-two
 </title>
 
 <body> 
-    <h1 >
+
+    <h1>
        <b>About Us
         </b>
     </h1>
+
+    <div>
+        <article class="h1">
+            <p>Aboout this article </p>
+        </article>
+
+    </div>
+
+    <div class="footer">
+        <p>Registered in since 2024</p>
+    </div>
 </body>
    
 
